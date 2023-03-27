@@ -1,0 +1,114 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "meu gpt",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "OpenAIGptIntent",
+          "slots": [
+            {
+              "name": "pergunta",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "me fale {pergunta}",
+                "o que é {pergunta}",
+                "{pergunta}"
+              ]
+            }
+          ],
+          "samples": [
+            "me diga",
+            "diga",
+            "fale",
+            "me responda",
+            "me fale",
+            "responda",
+            "pergunta"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "OpenAIGptIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "pergunta",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.798864581492.1229069381675",
+                "elicitation": "Elicit.Slot.798864581492.1229069381675"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.798864581492",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sua pergunta é {pergunta} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.798864581492.1229069381675",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Fale sua pergunta?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.798864581492.1229069381675",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sua pergunta é {pergunta} ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "16"
+}
