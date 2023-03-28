@@ -1,4 +1,6 @@
-# Este projeto é uma Skill Alexa que integra com a API da OpenAI para responder perguntas usando o modelo GPT. Desenvolvido por Madson Aguiar.
+# Este projeto é uma Skill Alexa que integra com a API da OpenAI para responder perguntas usando o modelo GPT. 
+
+## Desenvolvido por Madson Aguiar.
 
 ## Configuração
 
