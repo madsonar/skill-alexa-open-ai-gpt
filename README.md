@@ -1,8 +1,5 @@
-Este projeto é uma Skill Alexa com integração com a Open AI e Model GPT
-Este projeto é uma Skill Alexa que integra com a API da OpenAI para responder perguntas usando o modelo GPT. Desenvolvido por Madson Aguiar.
+# Este projeto é uma Skill Alexa que integra com a API da OpenAI para responder perguntas usando o modelo GPT. Desenvolvido por Madson Aguiar.
 
-markdown
-Copy code
 ## Configuração
 
 1. Copie o arquivo `.env.example` na pasta lambda para `.env` e insira sua chave OpenAI:
