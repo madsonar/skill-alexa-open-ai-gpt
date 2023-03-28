@@ -2,6 +2,8 @@
 
 ## Desenvolvido por Madson Aguiar.
 
+[Clique aqui para assistir o vídeo no Youtube](https://www.youtube.com/watch?v=TYOhHkGCjUE)
+
 ## Configuração
 
 1. Copie o arquivo `.env.example` na pasta lambda para `.env` e insira sua chave OpenAI:
